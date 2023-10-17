@@ -1,44 +1,22 @@
-mod args;
+use clap::{Parser, Args, Subcommand};
 
-use clap::{App, Arg};
+#[derive(Parser, Subcommand)]
+pub struct Args {
+    #[clap(subcommand)]
+    pub source: Source,
+}
 
-pub fn parse_args() -> clap::ArgMatches {
-    App::new("URL Checker")
-        .version("1.0")
-        .author("Your Name")
-        .about("Checks and tests URLs for status and response time")
-        .arg(
-            Arg::new("urls")
-                .short('u')
-                .long("urls")
-                .value_name("URL")
-                .about("URLs to test")
-                .multiple(true)
-                .takes_value(true),
-        )
-        .arg(
-            Arg::new("json")
-                .short('j')
-                .long("json")
-                .value_name("JSON_FILE")
-                .about("JSON file containing URLs")
-                .takes_value(true),
-        )
-        .arg(
-            Arg::new("csv")
-                .short('c')
-                .long("csv")
-                .value_name("CSV_FILE")
-                .about("CSV file containing URLs")
-                .takes_value(true),
-        )
-        .arg(
-            Arg::new("txt")
-                .short('t')
-                .long("txt")
-                .value_name("TXT_FILE")
-                .about("Text file containing URLs")
-                .takes_value(true),
-        )
-        .get_matches()
+#[derive(Clap)]
+pub enum Source {
+    #[clap(about = "Fetch URLs from a list")]
+    Urls(Vec<String>),
+
+    #[clap(about = "Fetch URLs from a JSON file")]
+    JsonFile(String),
+
+    #[clap(about = "Fetch URLs from a CSV file")]
+    CsvFile(String),
+
+    #[clap(about = "Fetch URLs from a plain text file")]
+    TxtFile(String),
 }
