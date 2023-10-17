@@ -1,10 +1,14 @@
-### probing or checking the health of URLs
-### that the tool is guarding or watching over URLs to ensure their availability and performance
+# urlprobe
+
+###
 
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" height="200" alt="rust logo"  />
 </div>
 
+###
+
+### that the tool is guarding or watching over URLs to ensure their availability and performance
 
 ## project structure:
 
@@ -25,7 +29,7 @@
 
 - a simple command-line tool in Rust which is checking url health and performance 
 - provides a command-line interface for checking url health and performance
-- TODO
+- 
 
 ## installation
 
