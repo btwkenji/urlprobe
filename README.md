@@ -14,44 +14,40 @@
 
 ```rust
 .
+├── LICENSE
 ├── Cargo.lock
 ├── Cargo.toml
 ├── README.md
-├── tests
-│   └── test.rs
-└── src
-    ├── args.rs
-    ├── main.rs
-    └── read.rs
+├── src
+│   ├── args.rs
+│   ├── main.rs
+│   └── read.rs
+└── tests
+    ├── app_test.rs
+    ├── args_test.rs
+    └── read_test.rs
 ```
 
 ## features
 
 - a simple command-line tool in Rust which is checking url health and performance 
 - provides a command-line interface for checking url health and performance
-- 
 
 ## installation
-
-- 1
 
 ```sh
 git clone https://github.com/kenjitheman/urlprobe
 ```
 
-- 2
-
 ```sh
 cargo build --release
 ```
-
-- 3
 
 ```sh
 cargo run --bin urlprobe
 ```
 
-## example
+## examples
 
 ```sh
 nil
