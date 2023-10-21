@@ -1,6 +1,6 @@
-use clap::{Parser, Args, Subcommand};
+use clap::Clap;
 
-#[derive(Parser, Subcommand)]
+#[derive(Clap)]
 pub struct Args {
     #[clap(subcommand)]
     pub source: Source,
