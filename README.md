@@ -14,18 +14,15 @@
 
 ```rust
 .
-├── LICENSE
 ├── Cargo.lock
 ├── Cargo.toml
 ├── README.md
 ├── src
-│   ├── args.rs
-│   ├── main.rs
-│   └── read.rs
+│   ├── lib.rs
+│   ├── main.rs
+│   └── read.rs
 └── tests
-    ├── app_test.rs
-    ├── args_test.rs
-    └── read_test.rs
+    └── test.rs
 ```
 
 ## features
@@ -50,7 +47,7 @@ cargo run --bin urlprobe
 ## examples
 
 ```sh
-nil
+
 ```
 
 ## contributing
