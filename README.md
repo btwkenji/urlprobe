@@ -14,6 +14,7 @@
 
 ```rust
 .
+├── LICENSE
 ├── Cargo.lock
 ├── Cargo.toml
 ├── README.md
@@ -44,10 +45,35 @@ cargo build --release
 cargo run --bin urlprobe
 ```
 
-## examples
+## usage
+
+### options
+
+- `-s, --source <SOURCE>`: Specify the data source (Required).
+  - `<SOURCE>`: The data source type. Must be one of: `json`, `csv`, `txt`, or `list`
+
+- `-f, --file <FILENAME>`: Specify the data source file
+  - `<FILENAME>`: The filename to read data from
+
+- `-u, --urls <URLS...>`: Specify the URLs to probe
+  - `<URLS...>`: A list of URLs to probe
+
+- `-h, --help`: Print help information
+
+- `-V, --version`: Print the version information
+
+### examples
+
+- this command probes URLs from the JSON file `data.json`
 
 ```sh
+cargo run --bin urlprobe -s json -f data.json
+```
 
+- this command probes the specified list of URLs
+
+```sh
+cargo run --bin urlprobe -s list -u https://example.com https://test.com
 ```
 
 ## contributing
