@@ -1,7 +1,13 @@
 [package]
 name = "urlprobe"
+authors = ["kenjitheman"]
 version = "0.1.0"
 edition = "2021"
+description = "simple cli tool for probing URLs for their status code and performance metrics"
+homepage = "https://github.com/kenjitheman/urlprobe"
+repository = "https://github.com/kenjitheman/urlprobe.git"
+readme = "README.md"
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -15,4 +21,4 @@ tokio = { version = "1.33.0", features = ["full"] }
 tokio-test = "0.4.3"
 
 [dev-dependencies]
-temp-file = "0.1.7"
+tempfile = "3.8.0"
