@@ -15,10 +15,10 @@ pub fn read_urls_from_json(file_path: &str) -> Result<Vec<String>, Box<dyn Error
                         .collect();
                     Ok(urls)
                 } else {
-                    Err("invalid JSON structure: 'urls' is not an array".into())
+                    Err("Invalid JSON structure: 'urls' is not an array".into())
                 }
             } else {
-                Err("invalid JSON structure: 'urls' key is missing".into())
+                Err("Invalid JSON structure: 'urls' key is missing".into())
             }
         }
         Err(e) => Err(e.into()),
