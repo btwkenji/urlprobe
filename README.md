@@ -64,13 +64,104 @@ cargo run --bin urlprobe
 
 ### examples
 
+- json structure example*
+
+```json
+{
+  "urls": [
+    "https://google.com",
+    "https://github.com",
+    "https://facebook.com",
+    "https://twitter.com",
+    "https://youtube.com",
+    "https://instagram.com",
+    "https: //linkedin.com",
+    "https://pinterest.com",
+    "https://wordpress.org",
+    "https://apple.com",
+    "https://wikipedia.org",
+    "https://adobe.com",
+    "https://tumblr.com",
+    "https://amazon.com",
+    "https://goo.gl",
+    "https://vimeo.com",
+    "https://flickr.com",
+    "https://microsoft.com",
+    "https://yahoo.com"
+  ]
+}
+```
+
 - this command probes URLs from the JSON file `data.json`
 
 ```sh
 cargo run --bin urlprobe -s json -f data.json
 ```
 
-- this command probes the specified list of URLs
+- CSV structure example*
+
+```csv
+urls
+https://google.com
+https://github.com
+https://facebook.com
+https://twitter.com
+https://youtube.com
+https://instagram.com
+https://linkedin.com
+https://pinterest.com
+https://wordpress.org
+https://apple.com
+https://wikipedia.org
+https://adobe.com
+https://tumblr.com
+https://amazon.com
+https://goo.gl
+https://vimeo.com
+https://flickr.com
+https://microsoft.com
+https://yahoo.com
+```
+
+- this command probes URLs from the CSV file `data.csv`
+
+```sh
+cargo run --bin urlprobe -s csv -f data.csv
+```
+
+- TXT structure example*
+
+```txt
+https://google.com
+https://github.com
+https://facebook.com
+https://twitter.com
+https://youtube.com
+https://instagram.com
+https://linkedin.com
+https://pinterest.com
+https://wordpress.org
+https://apple.com
+https://wikipedia.org
+https://adobe.com
+https://tumblr.com
+https://amazon.com
+https://goo.gl
+https://vimeo.com
+https://flickr.com
+https://microsoft.com
+https://yahoo.com
+```
+
+- this command probes URLs from the TXT file `data.txt`
+
+```sh
+cargo run --bin urlprobe -s txt -f data.txt
+```
+
+- using command-line arguments*
+
+    - this command probes the specified list of URLs
 
 ```sh
 cargo run --bin urlprobe -s list -u https://example.com https://test.com
