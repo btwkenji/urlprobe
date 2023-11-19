@@ -8,9 +8,9 @@
 
 ###
 
-### that the tool is guarding or watching over URLs to ensure their availability and performance
+### That the tool is guarding or watching over URLs to ensure their availability and performance
 
-## project structure:
+## Project structure:
 
 ```rust
 .
@@ -26,28 +26,28 @@
     └── test.rs
 ```
 
-## features
+## Features
 
-- a simple command-line tool in Rust which is checking url health and performance 
-- provides a command-line interface for checking url health and performance
+- A simple command-line tool in Rust which is checking url health and performance.
+- Provides a command-line interface for checking url health and performance.
 
-## installation
+## Installation
 
-```sh
+```shell
 git clone https://github.com/kenjitheman/urlprobe
 ```
 
-```sh
+```shell
 cargo build --release
 ```
 
-```sh
+```shell
 cargo run --bin urlprobe
 ```
 
-## usage
+## Usage
 
-### options
+### Options
 
 - `-s, --source <SOURCE>`: Specify the data source (Required).
   - `<SOURCE>`: The data source type. Must be one of: `json`, `csv`, `txt`, or `list`
@@ -62,9 +62,9 @@ cargo run --bin urlprobe
 
 - `-V, --version`: Print the version information
 
-### examples
+### Examples
 
-- json structure example*
+- Json structure example
 
 ```json
 {
@@ -92,13 +92,13 @@ cargo run --bin urlprobe
 }
 ```
 
-- this command probes URLs from the JSON file `data.json`
+- This command probes URLs from the JSON file `data.json`
 
-```sh
+```shell
 cargo run --bin urlprobe -s json -f data.json
 ```
 
-- CSV structure example*
+- CSV structure example
 
 ```csv
 urls
@@ -123,13 +123,13 @@ https://microsoft.com
 https://yahoo.com
 ```
 
-- this command probes URLs from the CSV file `data.csv`
+- This command probes URLs from the CSV file `data.csv`
 
-```sh
+```shell
 cargo run --bin urlprobe -s csv -f data.csv
 ```
 
-- TXT structure example*
+- TXT structure example
 
 ```txt
 https://google.com
@@ -153,27 +153,27 @@ https://microsoft.com
 https://yahoo.com
 ```
 
-- this command probes URLs from the TXT file `data.txt`
+- This command probes URLs from the TXT file `data.txt`
 
-```sh
+```shell
 cargo run --bin urlprobe -s txt -f data.txt
 ```
 
-- using command-line arguments*
+- Using command-line arguments
 
-    - this command probes the specified list of URLs
+    - This command probes the specified list of URLs
 
-```sh
+```shell
 cargo run --bin urlprobe -s list -u https://example.com https://test.com
 ```
 
-## contributing
+## Contributing
 
-- pull requests are welcome, for major changes, please open an issue first to
-  discuss what you would like to change
+- Pull requests are welcome, for major changes, please open an issue first to
+  discuss what you would like to change.
 
-- please make sure to update tests as appropriate
+- Please make sure to update tests as appropriate.
 
-## license
+## License
 
 - [MIT](https://choosealicense.com/licenses/mit/)
