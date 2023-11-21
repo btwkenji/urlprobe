@@ -33,15 +33,15 @@
 
 ## Installation
 
-```shell
+```sh
 git clone https://github.com/kenjitheman/urlprobe
 ```
 
-```shell
+```sh
 cargo build --release
 ```
 
-```shell
+```sh
 cargo run --bin urlprobe
 ```
 
@@ -94,7 +94,7 @@ cargo run --bin urlprobe
 
 - This command probes URLs from the JSON file `data.json`
 
-```shell
+```sh
 cargo run --bin urlprobe -s json -f data.json
 ```
 
@@ -125,7 +125,7 @@ https://yahoo.com
 
 - This command probes URLs from the CSV file `data.csv`
 
-```shell
+```sh
 cargo run --bin urlprobe -s csv -f data.csv
 ```
 
@@ -155,7 +155,7 @@ https://yahoo.com
 
 - This command probes URLs from the TXT file `data.txt`
 
-```shell
+```sh
 cargo run --bin urlprobe -s txt -f data.txt
 ```
 
@@ -163,7 +163,7 @@ cargo run --bin urlprobe -s txt -f data.txt
 
     - This command probes the specified list of URLs
 
-```shell
+```sh
 cargo run --bin urlprobe -s list -u https://example.com https://test.com
 ```
 
