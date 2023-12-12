@@ -13,7 +13,8 @@
 ## Project structure:
 
 ```rust
-.
+urlprobe
+│
 ├── LICENSE
 ├── Cargo.lock
 ├── Cargo.toml
