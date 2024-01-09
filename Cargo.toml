@@ -1,11 +1,11 @@
 [package]
 name = "urlprobe"
-authors = ["kenjitheman"]
+authors = ["btwkenji"]
 version = "0.1.0"
 edition = "2021"
 description = "simple cli tool for probing URLs for their status code and performance metrics"
-homepage = "https://github.com/kenjitheman/urlprobe"
-repository = "https://github.com/kenjitheman/urlprobe.git"
+homepage = "https://github.com/btwkenji/urlprobe"
+repository = "https://github.com/btwkenji/urlprobe.git"
 readme = "README.md"
 license = "MIT"
 
