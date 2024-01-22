@@ -6,7 +6,7 @@
 ## Installation
 
 ```sh
-git clone https://github.com/kenjitheman/urlprobe
+git clone https://github.com/btwkenji/urlprobe
 ```
 
 ```sh
@@ -43,23 +43,10 @@ cargo run --bin urlprobe
   "urls": [
     "https://google.com",
     "https://github.com",
-    "https://facebook.com",
     "https://twitter.com",
     "https://youtube.com",
     "https://instagram.com",
-    "https: //linkedin.com",
-    "https://pinterest.com",
-    "https://wordpress.org",
-    "https://apple.com",
     "https://wikipedia.org",
-    "https://adobe.com",
-    "https://tumblr.com",
-    "https://amazon.com",
-    "https://goo.gl",
-    "https://vimeo.com",
-    "https://flickr.com",
-    "https://microsoft.com",
-    "https://yahoo.com"
   ]
 }
 ```
@@ -78,21 +65,6 @@ https://google.com
 https://github.com
 https://facebook.com
 https://twitter.com
-https://youtube.com
-https://instagram.com
-https://linkedin.com
-https://pinterest.com
-https://wordpress.org
-https://apple.com
-https://wikipedia.org
-https://adobe.com
-https://tumblr.com
-https://amazon.com
-https://goo.gl
-https://vimeo.com
-https://flickr.com
-https://microsoft.com
-https://yahoo.com
 ```
 
 - This command probes URLs from the CSV file `data.csv`
@@ -106,23 +78,8 @@ cargo run --bin urlprobe -s csv -f data.csv
 ```txt
 https://google.com
 https://github.com
-https://facebook.com
 https://twitter.com
 https://youtube.com
-https://instagram.com
-https://linkedin.com
-https://pinterest.com
-https://wordpress.org
-https://apple.com
-https://wikipedia.org
-https://adobe.com
-https://tumblr.com
-https://amazon.com
-https://goo.gl
-https://vimeo.com
-https://flickr.com
-https://microsoft.com
-https://yahoo.com
 ```
 
 - This command probes URLs from the TXT file `data.txt`
@@ -132,8 +89,7 @@ cargo run --bin urlprobe -s txt -f data.txt
 ```
 
 - Using command-line arguments
-
-    - This command probes the specified list of URLs
+- This command probes the specified list of URLs
 
 ```sh
 cargo run --bin urlprobe -s list -u https://example.com https://test.com
@@ -148,4 +104,4 @@ cargo run --bin urlprobe -s list -u https://example.com https://test.com
 
 ## License
 
-- [MIT](https://choosealicense.com/licenses/mit/)
+- [MIT](./LICENSE)
