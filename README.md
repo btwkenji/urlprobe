@@ -6,7 +6,7 @@
 ## Installation
 
 ```sh
-git clone https://github.com/btwkenji/urlprobe
+git clone https://github.com/plastiey/urlprobe
 ```
 
 ```sh
