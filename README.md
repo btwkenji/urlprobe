@@ -1,37 +1,9 @@
-# urlprobe
+## Features
 
-###
+- A simple command-line tool in Rust which is checking url health and performance.
+- Provides a command-line interface for checking url health and performance.
 
-<div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" height="200" alt="rust logo"  />
-</div>
-
-###
-
-### that the tool is guarding or watching over URLs to ensure their availability and performance
-
-## project structure:
-
-```rust
-.
-├── LICENSE
-├── Cargo.lock
-├── Cargo.toml
-├── README.md
-├── src
-│   ├── lib.rs
-│   ├── main.rs
-│   └── read.rs
-└── tests
-    └── test.rs
-```
-
-## features
-
-- a simple command-line tool in Rust which is checking url health and performance 
-- provides a command-line interface for checking url health and performance
-
-## installation
+## Installation
 
 ```sh
 git clone https://github.com/kenjitheman/urlprobe
@@ -45,9 +17,9 @@ cargo build --release
 cargo run --bin urlprobe
 ```
 
-## usage
+## Usage
 
-### options
+### Options
 
 - `-s, --source <SOURCE>`: Specify the data source (Required).
   - `<SOURCE>`: The data source type. Must be one of: `json`, `csv`, `txt`, or `list`
@@ -62,27 +34,74 @@ cargo run --bin urlprobe
 
 - `-V, --version`: Print the version information
 
-### examples
+### Examples
 
-- this command probes URLs from the JSON file `data.json`
+- Json structure example
+
+```json
+{
+  "urls": [
+    "https://google.com",
+    "https://github.com",
+    "https://twitter.com",
+    "https://youtube.com",
+    "https://instagram.com",
+    "https://wikipedia.org",
+  ]
+}
+```
+
+- This command probes URLs from the JSON file `data.json`
 
 ```sh
 cargo run --bin urlprobe -s json -f data.json
 ```
 
-- this command probes the specified list of URLs
+- CSV structure example
+
+```csv
+urls
+https://google.com
+https://github.com
+https://facebook.com
+https://twitter.com
+```
+
+- This command probes URLs from the CSV file `data.csv`
+
+```sh
+cargo run --bin urlprobe -s csv -f data.csv
+```
+
+- TXT structure example
+
+```txt
+https://google.com
+https://github.com
+https://twitter.com
+https://youtube.com
+```
+
+- This command probes URLs from the TXT file `data.txt`
+
+```sh
+cargo run --bin urlprobe -s txt -f data.txt
+```
+
+- Using command-line arguments
+- This command probes the specified list of URLs
 
 ```sh
 cargo run --bin urlprobe -s list -u https://example.com https://test.com
 ```
 
-## contributing
+## Contributing
 
-- pull requests are welcome, for major changes, please open an issue first to
-  discuss what you would like to change
+- Pull requests are welcome, for major changes, please open an issue first to
+  discuss what you would like to change.
 
-- please make sure to update tests as appropriate
+- Please make sure to update tests as appropriate.
 
-## license
+## License
 
-- [MIT](https://choosealicense.com/licenses/mit/)
+- [MIT](./LICENSE)
